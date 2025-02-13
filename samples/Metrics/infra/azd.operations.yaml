@@ -1,0 +1,25 @@
+operations:
+- type: FileShareUpload
+  description: Upload files for grafana
+  config:
+    storageAccount: ${AZURE_VOLUMES_STORAGE_ACCOUNT}
+    fileShareName: ${SERVICE_GRAFANA_FILE_SHARE_BM0_NAME}
+    path: D:/a-Doing/aspire-auto/aspire/aspire-samples/samples/Metrics/grafana/config
+- type: FileShareUpload
+  description: Upload files for grafana
+  config:
+    storageAccount: ${AZURE_VOLUMES_STORAGE_ACCOUNT}
+    fileShareName: ${SERVICE_GRAFANA_FILE_SHARE_BM1_NAME}
+    path: D:/a-Doing/aspire-auto/aspire/aspire-samples/samples/Metrics/grafana/dashboards
+- type: FileShareUpload
+  description: Upload files for otelcollector
+  config:
+    storageAccount: ${AZURE_VOLUMES_STORAGE_ACCOUNT}
+    fileShareName: ${SERVICE_OTELCOLLECTOR_FILE_SHARE_BM0_NAME}
+    path: D:/a-Doing/aspire-auto/aspire/aspire-samples/samples/Metrics/otelcollector/config.yaml
+- type: FileShareUpload
+  description: Upload files for prometheus
+  config:
+    storageAccount: ${AZURE_VOLUMES_STORAGE_ACCOUNT}
+    fileShareName: ${SERVICE_PROMETHEUS_FILE_SHARE_BM0_NAME}
+    path: D:/a-Doing/aspire-auto/aspire/aspire-samples/samples/Metrics/prometheus
